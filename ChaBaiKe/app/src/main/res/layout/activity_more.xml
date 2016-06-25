@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.day0620_chabaike.ui.MoreActivity">
+
+    <include
+        android:id="@+id/more_toolbar"
+        layout="@layout/toolbar_our" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/logocha" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#0f0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#898e89"
+            android:text="收藏夹"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/more_collect"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收藏夹"
+        android:textSize="26sp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+    <TextView
+        android:id="@+id/more_history"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浏览记录"
+        android:textSize="26sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#0f0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#898e89"
+            android:text="关于客户端"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/more_code"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="版本信息"
+        android:textSize="26sp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+    <TextView
+        android:id="@+id/more_back"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="意见反馈"
+        android:textSize="26sp"/>
+
+</LinearLayout>

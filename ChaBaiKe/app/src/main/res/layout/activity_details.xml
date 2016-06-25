@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.day0620_chabaike.ui.DetailsActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/details_toolabar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#c1abab">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/details_tool_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/details_tool_iv"
+                android:text="茶百科"
+                android:textSize="24sp" />
+
+
+
+            <TextView
+                android:id="@+id/details_tool_tvsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="收藏"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/details_tool_tvfx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="分享"
+                android:textSize="15sp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/details_tool_tvsc"
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#209720">
+
+        <TextView
+            android:id="@+id/details_title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:text="多地出台整合城乡居民医保方案 个人缴费提高 《每日经济新闻》记者注意到，年初国务院发布的《关于整合城乡居民基本医疗保险制度的意见》中明确，         合理划分政府与个人的筹资责任，在提高政府补助标准的同时，适当提高个人缴费比重"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/details_keywords"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/details_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="阅读数  饭局  大脑" />
+
+        <TextView
+            android:id="@+id/details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/details_title"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/details_keywords"
+            android:gravity="right|center_vertical"
+            android:paddingRight="10dp"
+            android:text="2016-06-21 66:66:66" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/details_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </ScrollView>
+</LinearLayout>
